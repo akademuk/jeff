@@ -1,0 +1,1438 @@
+body {
+    font-family: 'Yaldevi', sans-serif;
+}
+
+.wrapper {
+    max-width: 1120px;
+    margin: 0 auto;
+}
+
+main {
+    background: #F0F4FE;
+    position: relative;
+}
+
+.btn__style {
+    width: 290px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background: #FFF;
+    border: none;
+    color: #0047F5;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px;
+}
+
+.fixed__btn {
+    width: 50px;
+    height: 50px;
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: 100;
+}
+
+/* Header */
+header {
+    height: 70px;
+    width: 100%;
+    background: #FFF;
+}
+
+header .wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 100%;
+    padding-left: 10px;
+}
+
+header .wrapper button {
+    color: #000;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-right: 40px;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Hero section */
+.hero {
+    padding: 30px 0;
+}
+
+.slider-item {
+    border-radius: 28px;
+    background: #0047F5;
+    height: 330px;
+}
+
+.slider__box {
+    padding: 42px 0 23px 40px;
+    display: flex;
+    height: 100%;
+    box-sizing: border-box;
+    justify-content: space-between;
+    position: relative;
+}
+
+.hero__btn-mobile {
+    display: none;
+}
+
+.hero__tittle {
+    max-width: 572px;
+}
+
+.slider__box figure {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 509px;
+    height: 100%;
+}
+
+.slider__box figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hero__tittle h3 {
+    color: #FFF;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.hero__tittle p {
+    color: #2FEC7B;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    margin-bottom: 26px;
+}
+
+.hero__baner {
+    position: relative;
+}
+
+.hero__dots {
+    position: absolute;
+    bottom: 22px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+}
+
+.hero__dots .slick-dots {
+    display: flex;
+    align-items: center;
+    gap: 2px;
+}
+
+.hero__dots .slick-dots li {
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+.hero__dots .slick-dots li button {
+    font-size: 0;
+}
+
+.hero__dots .slick-dots li.slick-active {
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: #fff;
+}
+
+/* ------------------------------------------------------------- */
+
+
+/* Your financial needs */
+.financialNeeds {
+    padding: 60px 0;
+}
+
+.financialNeeds .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 48px;
+}
+
+.financialNeeds__tittle h2 {
+    color: #0047F5;
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.financialNeeds__tittle p {
+    color: #333D54;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.financialNeeds__main {
+    display: flex;
+    gap: 26px;
+    flex-wrap: wrap;
+}
+
+.financialNeeds__card {
+    width: 260px;
+    height: 190px;
+    border-radius: 17px;
+    background: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    overflow: hidden;
+}
+
+.financialNeeds__card figure {
+    width: 100px;
+    height: 100px;
+    background: linear-gradient(135deg, #5FEE99 0%, #EBFFF7 100%);
+    margin-bottom: 10px;
+    border-radius: 16px;
+}
+
+.financialNeeds__card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+.financialNeeds__card h3 {
+    color: #0147F2;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+}
+
+.financialNeeds__off {
+    color: #FFF;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px;
+    background: #FF1F00;
+    transform: rotate(45deg);
+    position: absolute;
+    top: 23px;
+    right: -46px;
+    width: 168.252px;
+    height: 33px;
+}
+
+/* ------------------------------------------------------------- */
+
+/* What is Jeff? */
+.whatJeff {
+    background: #0047F5;
+    padding: 90px 0;
+}
+
+.whatJeff .wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 42px;
+}
+
+.whatJeff__header h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 53px;
+    margin-bottom: 10px;
+}
+
+.whatJeff__header p {
+    color: #FFF;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.whatJeff__header p:nth-of-type(1) {
+    margin-bottom: 35px;
+}
+
+.whatJeff__main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 21px;
+}
+
+.whatJeff__card {
+    width: 359px;
+    height: 340px;
+    padding: 20px;
+    box-sizing: border-box;
+    border-radius: 12px;
+    background: linear-gradient(122deg, #FFF -2.44%, #83EFAF 93.17%);
+}
+
+.whatJeff__card figure {
+    width: 148px;
+    height: 148px;
+    margin: 0 auto;
+    margin-bottom: 4px;
+}
+
+.whatJeff__card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.whatJeff__card h3 {
+    color: #0147F2;
+    text-align: center;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 26px;
+    margin-bottom: 12px;
+}
+
+.whatJeff__card p {
+    color: #333D54;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 24px;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Lending partners with Jeff Recognized organizations working as */
+.partners {
+    padding: 60px 0;
+}
+
+.partners .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 52px;
+}
+
+.partners__header h2 {
+    color: #0047F5;
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 13px;
+}
+
+.partners__header p {
+    color: #333D54;
+    text-align: center;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.partners__main {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 29px 92px;
+}
+
+.partners__card {
+    width: 210px;
+    height: 70px;
+    background: #FFF;
+}
+
+.partners__card figure {
+    width: 100%;
+    height: 100%;
+}
+
+.partners__card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+}
+
+/* ------------------------------------------------------------- */
+
+
+/* How does Jeff work? */
+.jeffWork {
+    padding: 90px 0;
+    background: #0047F5;
+}
+
+.jeffWork h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 36px;
+}
+
+.jeffWork__box {
+    display: flex;
+    gap: 21px;
+}
+
+.jeffWork__left {
+    width: 549px;
+    height: 589px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.jeffWork__left figure {
+    width: 100%;
+    height: 100%;
+}
+
+.jeffWork__left figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.jeffWork__right {
+    width: calc(100% - 21px - 549px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.jeffWork__card {
+    padding: 22px 10px 22px 22px;
+    display: flex;
+    align-items: center;
+    border-radius: 20px;
+    gap: 21px;
+    height: 139px;
+    box-sizing: border-box;
+    background: var(--ugly-gradient_left, linear-gradient(90deg, #5FEE99 0%, #EBFFF7 112.5%));
+}
+
+.jeffWork__card span {
+    color: #0047F5;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    border-radius: 50%;
+    border: 1px solid #0047F5;
+    width: 60px;
+    height: 60px;
+    min-width: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 5px;
+    box-sizing: border-box;
+}
+
+.jeffWork__card p {
+    color: #0147F2;
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 33px;
+}
+
+/* ------------------------------------------------------------- */
+
+
+/* What do customers say about Jeff? */
+.reviews {
+    padding: 30px 0 60px 0;
+    background: #0047F5;
+}
+
+.reviews .wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.reviews__header h2 {
+    color: #FFF;
+    text-align: center;
+    font-size: 45px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 30px;
+}
+.prev {
+    display: none;
+}
+.next {
+    display: none;
+}
+.reviews__header span {
+    text-align: center;
+    width: 100%;
+    display: block;
+    color: #FFF;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.reviews__header figure {
+    width: 270px;
+    margin: 0 auto;
+}
+
+.reviews__header figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews__main {
+    display: flex;
+    gap: 22px;
+}
+
+.reviews__card {
+    width: 359px;
+    height: 220px;
+    border-radius: 10px;
+    background: rgba(255, 255, 255, 0.70);
+    padding: 19px;
+    box-sizing: border-box;
+}
+
+.reviews__card figure {
+    width: 153px;
+    height: 30.6px;
+    margin-bottom: 10px;
+}
+
+.reviews__card figure img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.reviews__card h3 {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 27px;
+    margin-bottom: 10px;
+}
+
+.reviews__card p {
+    color: #000;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+}
+
+/* ------------------------------------------------------------- */
+
+/* Footer */
+footer {
+    padding: 65px 0 20px 0;
+}
+
+.footer__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    align-content: center;
+    padding: 0 15px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #6C7793;
+    margin-bottom: 10px;
+}
+
+.footer__header nav ul {
+    display: flex;
+    gap: 30px;
+}
+
+.footer__header nav ul li a {
+    color: #333D54;
+    text-align: center;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__header>ul {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 60px;
+    height: 30px;
+}
+
+.footer__header>ul li {
+    width: 30px;
+    height: 30px;
+}
+
+.footer__header>ul li a {
+    width: 100%;
+    height: 100%;
+    display: flex;
+}
+
+.footer__header address {
+    display: flex;
+    flex-direction: column;
+    color: #333D54;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__header address a {
+    color: #333D54;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.footer__header address a:nth-last-of-type(1) {
+    color: #333D54;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration-line: underline;
+}
+
+.footer__main {
+    color: #6C7793;
+    font-size: 12px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+/* ------------------------------------------------------------- */
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    .financialNeeds {
+        padding: 35px 0;
+    }
+
+    footer {
+        padding-bottom: 60px;
+    }
+}
+
+@media (max-width: 1200px) {
+    .wrapper {
+        max-width: 90%;
+    }
+
+    .jeffWork__box {
+        flex-wrap: wrap;
+    }
+
+    .jeffWork__right {
+        min-width: 325px;
+        width: 100%;
+        flex-wrap: wrap;
+        flex: 1;
+        flex-direction: row;
+    }
+
+    .slider__box figure {
+        width: 350px;
+    }
+
+    .slider__box figure img {
+        object-fit: contain;
+    }
+
+    .financialNeeds__card {
+        min-width: 260px;
+        width: auto;
+        flex: 1;
+    }
+
+    .whatJeff__card {
+        min-width: 359px;
+        width: auto;
+        flex: 1;
+    }
+
+    .partners__card {
+        min-width: 210px;
+        width: auto;
+        flex: 1;
+    }
+
+    h2 {
+        font-size: 30px !important;
+    }
+
+    .jeffWork__left {
+        min-width: 400px;
+        width: auto;
+        flex: 1;
+    }
+
+    .jeffWork__card {
+        min-width: 325px;
+        flex: 1;
+        width: auto;
+        flex-wrap: wrap;
+        height: auto;
+        gap: 13px;
+    }
+
+    .reviews__main {
+        flex-wrap: wrap;
+    }
+
+    .reviews__card {
+        min-width: 256px;
+        width: auto;
+        flex: 1;
+        height: 220px;
+    }
+
+    .footer__header {
+        flex-wrap: wrap;
+        gap: 32px;
+    }
+
+    .reviews__box .slick-track .slick-slide {
+        max-width: 359px;
+        margin: 0 11px;
+    }
+
+    .reviews__box {
+        position: relative;
+    }
+
+    .prev {
+        position: absolute;
+        top: 50%;
+        left: -25px;
+        transform: translateY(-50%) rotate(180deg);
+        z-index: 5;
+    }
+
+    .next {
+        position: absolute;
+        top: 50%;
+        right: -25px;
+        transform: translateY(-50%);
+        z-index: 5;
+    }
+
+    .reviews {
+        position: relative;
+    }
+
+    .reviews::after {
+        content: "";
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        height: 359px;
+        width: 100%;
+        max-width: 359px;
+        z-index: 4;
+        display: block;
+        background: linear-gradient(273deg, #0047F5 14.45%, rgba(0, 71, 245, 0.00) 49.79%);
+    }
+}
+
+@media (max-width: 768px) {
+    .wrapper {
+        max-width: 688px;
+    }
+    .prev {
+        display: flex;
+    }
+    .next {
+        display: flex;
+    }
+    header .wrapper button {
+        margin-right: 0;
+    }
+
+    .slider__box {
+        padding-top: 52px;
+    }
+
+    .slider__box figure {
+        width: 350px;
+        right: -45px;
+    }
+
+    h2 {
+        font-size: 45px !important;
+    }
+
+    .financialNeeds {
+        padding-top: 48px;
+        padding-bottom: 30px;
+    }
+
+    .financialNeeds__main {
+        max-width: 546px;
+        margin: 0 auto;
+        gap: 21px 26px;
+    }
+
+    .financialNeeds .wrapper {
+        gap: 34px;
+    }
+
+    .whatJeff {
+        padding-top: 77px;
+        padding-bottom: 75px;
+    }
+
+    .whatJeff__header p:nth-of-type(1) {
+        margin-bottom: 9px;
+    }
+
+    .whatJeff .wrapper {
+        gap: 35px;
+    }
+
+    .whatJeff__card {
+        height: 200px;
+        display: flex;
+        padding: 30px 49px 40px 49px;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .whatJeff__card p {
+        text-align: left;
+    }
+
+    .whatJeff__card figure {
+        width: 130px;
+        height: 130px;
+        min-width: 130px;
+    }
+
+    .whatJeff__card>div {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .whatJeff__main {
+        gap: 16px;
+    }
+
+    .partners__header h2 br {
+        display: none;
+    }
+
+    .partners {
+        padding-top: 74px;
+        padding-bottom: 75px;
+    }
+
+    .partners__header h2 {
+        margin-bottom: 3px;
+    }
+
+    .jeffWork {
+        padding-top: 76px;
+    }
+
+    .partners__header p br {
+        display: none;
+    }
+
+    .partners .wrapper {
+        gap: 36px;
+    }
+
+    .partners__main {
+        gap: 20px 19px;
+    }
+
+    .jeffWork__left {
+        height: 383px;
+    }
+
+    .jeffWork__left figure img {
+        object-fit: cover;
+        object-position: top;
+    }
+
+    .jeffWork__box {
+        gap: 38px;
+    }
+
+    .jeffWork__right {
+        padding: 0 8.5px;
+    }
+
+    .jeffWork__card {
+        padding: 27px 10px 22px 18px;
+        height: 260px;
+        box-sizing: border-box;
+        align-items: flex-start;
+    }
+
+    .jeffWork__card span {
+        width: 56px;
+        height: 59px;
+        font-size: 40px;
+        min-width: 56px;
+    }
+
+    .jeffWork__card {
+        gap: 2px;
+    }
+
+    .reviews {
+        padding-top: 10px;
+    }
+
+    .reviews__header h2 {
+        width: 98%;
+    }
+
+    .reviews__card {
+        min-width: 359px;
+    }
+
+    .reviews {
+        padding-bottom: 67px;
+    }
+
+    .next {
+        right: 6px;
+    }
+
+    footer {
+        padding-top: 26px;
+    }
+
+    .footer__header {
+        padding: 0;
+        flex-wrap: wrap;
+        gap: 23px 32px;
+        padding-bottom: 31px;
+        margin-bottom: 18px;
+    }
+
+    .footer__header nav ul {
+        width: 65%;
+        margin-left: auto;
+        flex-wrap: wrap;
+        gap: 10px 30px;
+    }
+
+    .footer__header nav ul li:nth-of-type(1) {
+        order: 1;
+    }
+
+    .footer__header nav ul li:nth-of-type(2) {
+        order: 3;
+    }
+
+    .footer__header nav ul li:nth-of-type(3) {
+        order: 2;
+    }
+
+    .footer__header nav ul li:nth-of-type(4) {
+        order: 4;
+        margin-left: auto;
+    }
+
+    .footer__header a {
+        width: 50%;
+    }
+
+    .footer__header nav {
+        width: 45%;
+    }
+}
+
+@media (max-width: 576px) {
+    .wrapper {
+        max-width: 350px;
+    }
+
+    header .wrapper {
+        max-width: 100%;
+        padding: 0 17px;
+    }
+
+    .hero {
+        padding: 26px 0;
+    }
+
+    .slider__box {
+        padding: 32px 30px;
+        height: 340px;
+    }
+
+    .slider__box figure {
+        width: 160px;
+    }
+
+    .hero__tittle {
+        max-width: 165px;
+    }
+
+    .hero__tittle h3 {
+        font-size: 36px;
+        font-style: normal;
+        font-weight: 700;
+        line-height: normal;
+    }
+
+    .hero__tittle p br {
+        display: none;
+    }
+
+    .slider__box figure {
+        right: -15px;
+        display: flex;
+        align-items: center;
+        top: -50px;
+    }
+
+    .slider__box figure img {
+        height: 35%;
+        object-fit: cover;
+    }
+
+    .hero__tittle p {
+        margin-bottom: 30px;
+    }
+
+    .slider-item {
+        height: 340px;
+        overflow: hidden;
+    }
+
+    .hero__dots .slick-dots li.slick-active {
+        width: 9px;
+        height: 9px;
+    }
+
+    h2 {
+        font-size: 36px !important;
+    }
+
+    .financialNeeds {
+        padding-top: 23px;
+    }
+
+    .financialNeeds__tittle h2 {
+        text-align: left;
+        margin-bottom: 5px;
+    }
+
+    .financialNeeds__tittle p {
+        text-align: left;
+    }
+
+    .financialNeeds__card {
+        min-width: 160px;
+    }
+
+    .financialNeeds .wrapper {
+        gap: 13px;
+    }
+
+    .whatJeff {
+        padding-top: 57px;
+        padding-bottom: 60px;
+    }
+
+    .whatJeff__header h2 {
+        text-align: left;
+    }
+
+    .whatJeff__header p {
+        text-align: left;
+    }
+
+    .whatJeff__card {
+        padding: 19px 22px 19px 103px;
+    }
+
+    .whatJeff__card figure {
+        position: absolute;
+        left: 4%;
+    }
+
+    .whatJeff__main {
+        gap: 21px;
+    }
+
+    .partners {
+        padding-top: 59px;
+    }
+
+    .partners__header h2 {
+        text-align: left;
+    }
+
+    .partners__header p {
+        text-align: left;
+    }
+
+    .partners__card {
+        min-width: 165px;
+        flex: 0;
+    }
+
+    .partners {
+        padding-bottom: 60px;
+    }
+
+    .jeffWork h2 {
+        text-align: left;
+    }
+
+    .jeffWork {
+        padding-top: 32px;
+    }
+
+    .jeffWork .wrapper {
+        max-width: 382px;
+    }
+
+    .jeffWork__left {
+        min-width: 100%;
+        max-width: 382px;
+        height: 213px;
+    }
+
+    .jeffWork__box {
+        gap: 45px;
+    }
+
+    .jeffWork__right {
+        padding: 0 15px;
+    }
+
+    .jeffWork__card {
+        padding: 19px 10px 22px 25px;
+        height: 230px;
+    }
+
+    .reviews__header h2 {
+        width: 100%;
+        text-align: left;
+        margin-bottom: 21px;
+    }
+
+    .jeffWork {
+        padding-bottom: 67px;
+    }
+
+    .reviews__header figure {
+        margin-left: 0;
+        width: 187px;
+        margin-bottom: 10px;
+    }
+
+    .reviews__card {
+        max-width: 305px;
+    }
+
+    .reviews__box .slick-track .slick-slide {
+        max-width: 305px;
+    }
+
+    .reviews__card {
+        min-width: 305px;
+    }
+
+    .reviews__header {
+        color: #FFF;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+
+    .reviews .wrapper {
+        gap: 28px;
+    }
+
+    .reviews {
+        padding-bottom: 82px;
+    }
+
+    .footer__header nav {
+        width: 100%;
+    }
+
+    .footer__header nav ul {
+        width: 100%;
+    }
+
+    .footer__header nav ul li {
+        width: 45%;
+    }
+
+    .footer__header nav ul li:nth-of-type(3) {
+        text-align: right;
+    }
+
+    .footer__header nav ul li:nth-of-type(4) {
+        text-align: right;
+    }
+
+}
+
+@media (max-width: 400px) {
+    .jeffWork__card {
+        min-width: 100%;
+    }
+
+    .jeffWork__right {
+        min-width: 100%;
+    }
+
+    .wrapper {
+        max-width: 270px;
+    }
+
+    .whatJeff__card {
+        min-width: 100%;
+    }
+    .financialNeeds__card h3 {
+        width: 90%;
+    }
+
+    .slider__box figure {
+        position: static;
+        order: 2;
+        width: 100%;
+        height: 167px;
+        margin-bottom: 20px;
+    }
+
+    .hero__tittle {
+        width: 100%;
+        max-width: 100%;
+        order: 1;
+    }
+
+    .slider__box {
+        height: 470px;
+        flex-direction: column;
+        justify-content: flex-start;
+        padding: 32px 13px;
+        padding-right: 0;
+    }
+
+    .hero__tittle h3 {
+        margin-bottom: 13px;
+    }
+
+    .slider__box figure {
+        margin-bottom: 11px;
+    }
+
+    .slider-item {
+        height: 470px;
+    }
+
+    .hero__btn-mobile {
+        order: 3;
+    }
+
+    .hero__btn-mobile {
+        display: flex;
+        max-width: 220px;
+        margin-left: 7px;
+    }
+
+    .hero__btn-desktop {
+        display: none;
+    }
+
+    .slider__box figure img {
+        height: 100%;
+    }
+
+    .hero__tittle p {
+        margin-bottom: 0;
+    }
+
+    header .wrapper {
+        padding: 0 25px;
+    }
+
+    .financialNeeds__card {
+        min-width: 120px;
+        height: 170px;
+    }
+
+    .financialNeeds__main {
+        gap: 20px;
+    }
+
+    .financialNeeds__off {
+        font-size: 8px;
+        width: 129.905px;
+        height: 25.479px;
+        top: 19px;
+        right: -35px;
+    }
+
+    .financialNeeds__card figure {
+        width: 80px;
+        height: 80px;
+    }
+    .whatJeff__header h2 {
+        width: 70%;
+    }
+    .whatJeff {
+        padding-top: 45px;
+    }
+    .whatJeff .wrapper  {
+        gap: 28px;
+    }
+    .whatJeff__card figure {
+        position: static;
+    }
+    .whatJeff__card {
+        flex-direction: column;
+        height: 330px;
+        padding-left: 11px;
+        gap: 0;
+    }
+    .whatJeff__card > div {
+        align-items: center;
+    }
+    .whatJeff__card > div p {
+        text-align: center;
+    }
+    .whatJeff {
+        padding-bottom: 47px;
+    }
+    .partners__header h2 {
+        font-size: 32px !important;
+        line-height: 156%;
+    }
+    .partners__main {
+        flex-direction: column;
+        align-items: center;
+    }
+    .partners__card {
+        width: 170px;
+        height: 70px;
+        max-height: 70px;
+        min-height: 70px;
+    }
+    .partners__card figure {
+        height: 70px;
+        max-height: 70px;
+        min-height: 70px;
+    }
+    .partners .wrapper {
+        gap: 27px;
+    }
+    .partners__main {
+        gap: 16px 19px;
+    }
+    .partners {
+        padding-bottom: 50px;
+    }
+    .jeffWork .wrapper {
+        max-width: 270px !important;
+    }
+    .jeffWork {
+        padding-top: 59px;
+    }
+    .jeffWork__left {
+        display: none;
+    }
+    .jeffWork__card {
+        width: 260px;
+        height: 280px;
+        min-width: 260px;
+    }
+    .jeffWork__right {
+        padding: 0;
+    }
+    .jeffWork h2 {
+        margin-bottom: 21px;
+    }
+    .reviews {
+        padding-top: 37px;
+    }
+    .reviews {
+        padding-bottom: 56px;
+    }
+    footer {
+        padding-top: 55px;
+    }
+    .footer__header nav ul li {
+        width: 44%;
+    }
+    .footer__header nav {
+        margin-bottom: 11px;
+    }
+    .footer__header address {
+        width: 50%;
+    }
+}
