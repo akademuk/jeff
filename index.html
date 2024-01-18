@@ -14,14 +14,51 @@
 </head>
 
 <body>
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span id="closePopupButton" class="close-button">&times;</span>
+            <h2>ලියාපදිංචිය</h2>
+            <p>කරුණාකර ඔබගේ දුරකථන අංකය සහ ඊමේල් ලිපිනය ලබා දෙන්න අප ගැළපෙන හවුල්කරුවෙකු සොයන්නම්.</p>
+            <form action="">
+                <div class="input__box">
+                    <label for="number">
+                        <input type="number" id="number" placeholder="+94(0)">
+                        <span>දුරකථන අංකයක් අවශ්‍යයි</span>
+                    </label>
+                </div>
+                <div class="input__box">
+                    <label for="email">
+                        <input type="email" id="email" placeholder="ඊමේල්">
+                        <span>ඊමේල් එක අවශ්‍යයි</span>
+                    </label>
+                </div>
+                <div class="input__box">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">
+                        අලෙවිකරණ පණිවිඩ ලැබීමට මම එකඟ <br> වෙමි
+                    </label>
+                </div>
+                <div class="recaptha">
+                    <img src="img/rec.png" alt="">
+                </div>
+                <input type="submit" value="ලියාපදිංචි වෙන්න" class="btn__submit">
+            </form>
+            <p class="popup__text">
+                ඉහත 'දැන් ලියාපදිංචි වෙන්න' ක්ලික් කිරීම මගින්, පාරිභෝගිකයා කියවා තේරුම් ගත් බව තහවුරැ කරයි
+                <a href="#">තේමාව සහ කොන්දේසි</a>
+            </p>
+        </div>
+    </div>
+
     <header>
         <div class="wrapper">
-            <a href="#">
+            <a href="index.html">
                 <img src="img/Logo.svg" alt="Logo">
             </a>
-            <button>ඉක්මන් ණය</button>
+            <button id="openPopupButton">ඉක්මන් ණය</button>
         </div>
     </header>
+
     <main>
         <button class="fixed__btn">
             <img src="img/fixed.png" alt="">
@@ -159,11 +196,12 @@
                         <figure>
                             <img src="img/whatJeff1.png" alt="ඉක්මණින්">
                         </figure>
-                       <div>
-                        <h3>ඉක්මණින්</h3>
-                        <p>හොඳම මූල්ය දීමනාව සොයා ගැනීමට පැය ගණන් වැය කිරීමට අවශ්ය නැත. ජෙෆ්  සමඟින් ඔබට විනාඩි 2කට අඩු
-                            කාලයකින් සුදුසුම ණය දීමනාවක් ලබා ගත හැක</p>
-                       </div>
+                        <div>
+                            <h3>ඉක්මණින්</h3>
+                            <p>හොඳම මූල්ය දීමනාව සොයා ගැනීමට පැය ගණන් වැය කිරීමට අවශ්ය නැත. ජෙෆ්  සමඟින් ඔබට විනාඩි 2කට
+                                අඩු
+                                කාලයකින් සුදුසුම ණය දීමනාවක් ලබා ගත හැක</p>
+                        </div>
                     </div>
 
                     <div class="whatJeff__card">
@@ -172,8 +210,9 @@
                         </figure>
                         <div>
                             <h3>පහසුයි</h3>
-                        <p>සම්පූර්ණ ක්රියාවලිය 100% ඔන්ලයින්  ව සිදු වන   අතර ඔබට 24/7 පුරාම  ණයක් සඳහා ඉල්ලුම් කළ හැකිය
-                        </p>
+                            <p>සම්පූර්ණ ක්රියාවලිය 100% ඔන්ලයින්  ව සිදු වන   අතර ඔබට 24/7 පුරාම  ණයක් සඳහා ඉල්ලුම් කළ
+                                හැකිය
+                            </p>
                         </div>
                     </div>
 
@@ -181,11 +220,12 @@
                         <figure>
                             <img src="img/whatJeff3.png" alt="ආරක්ෂිතයි">
                         </figure>
-                       <div>
-                        <h3>ආරක්ෂිතයි</h3>
-                        <p>ජෙෆ් ආරක්ෂාව සහ විනිවිදභාවය සහතික කරමින් පිළිගත් මූල්ය හවුල්කරුවන් සමඟ පමණක් සහයෝගයෙන් කටයුතු
-                            කරයි</p>
-                       </div>
+                        <div>
+                            <h3>ආරක්ෂිතයි</h3>
+                            <p>ජෙෆ් ආරක්ෂාව සහ විනිවිදභාවය සහතික කරමින් පිළිගත් මූල්ය හවුල්කරුවන් සමඟ පමණක් සහයෝගයෙන්
+                                කටයුතු
+                                කරයි</p>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -303,7 +343,8 @@
                             <figure>
                                 <img src="img/star__smool.svg" alt="">
                             </figure>
-                            <h3>මගේ දුරකථනය අන්තර්ජාලයට සම්බන්ධ වී ඇති තාක්, මට පහසුවෙන් අන්තර්ජාලයෙන් මුදල් ණයට ගත හැකිය,
+                            <h3>මගේ දුරකථනය අන්තර්ජාලයට සම්බන්ධ වී ඇති තාක්, මට පහසුවෙන් අන්තර්ජාලයෙන් මුදල් ණයට ගත
+                                හැකිය,
                                 එය සරල සහ භාවිතා කිරීමට ද පහසුය.</h3>
                             <p>ගුයෙන් හුන්ග් ටරම්</p>
                         </div>
@@ -311,7 +352,8 @@
                             <figure>
                                 <img src="img/star__smool.svg" alt="">
                             </figure>
-                            <h3>පියවර ඇත්තෙන්ම පහසුයි, මට එකවර බොහෝ ණය දීමනා ලබා ගැනීමට පමණක් නොව, මට ගැළපෙනබොහෝ පොලී අනුපාත
+                            <h3>පියවර ඇත්තෙන්ම පහසුයි, මට එකවර බොහෝ ණය දීමනා ලබා ගැනීමට පමණක් නොව, මට ගැළපෙනබොහෝ පොලී
+                                අනුපාත
                                 ද ලැබේ!</h3>
                             <p>ලි ගුන්ක ටම්</p>
                         </div>
@@ -322,61 +364,60 @@
                 </div>
             </div>
         </section>
-
-        <footer>
-            <div class="wrapper">
-                <div class="footer__header">
-                    <a href="#">
-                        <img src="img/Logo.svg" alt="Logo">
-                    </a>
-                    <nav>
-                        <ul>
-                            <li>
-                                <a href="#">ඉක්මන් ණය</a>
-                            </li>
-                            <li>
-                                <a href="#">ගෝලීය</a>
-                            </li>
-                            <li>
-                                <a href="#">නියමයන් සහ කොන්දේසි</a>
-                            </li>
-                            <li>
-                                <a href="#">රහස්යතා ප්රතිපත්ති</a>
-                            </li>
-                        </ul>
-                    </nav>
-                    <address>
-                        <a href="tel:+77010000000">+77010000000</a>
-                        <a href="mailto:info.zaimer2022@gmail.com">info.zaimer2022@gmail.com</a>
-                        <p>Almaty microdistrict Sairan building 14</p>
-                    </address>
-                    <ul>
-                        <li>
-                            <a href="#">
-                                <img src="img/facebook.png" alt="facebook">
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                                <img src="img/telegram.png" alt="telegram">
-                            </a>
-                        </li>
-                    </ul>
-                </div>
-                <div class="footer__main">
-                    ජෙෆ් ණය සපයන්නෙකු නොවන අතර ණය නිකුත් නොකරයි. ජෙෆ්ගේ සේවාව පරිශීලකයින්ට කීර්තිමත්, ආරක්ෂිත සහ සුදුසු
-                    මූල්ය සමාගමක් සංසන්දනය කර තෝරා ගැනීමට උපකාරී වේ. Jeff පුළුල් පරාසයක මූල්ය නිෂ්පාදන පිරිනමයි,
-                    පරිශීලකයින්ට අවම පොලී අනුපාතය 0,01% සහ උපරිම 427% සමඟ දින 91 සිට 366 දක්වා ණය ආපසු ගෙවීමට නම්යශීලී
-                    වීමට ඉඩ සලසයි. උදාහරණයක් ලෙස, LKR 2,000,000 ක ණයක් සඳහා, දින 91 ක කාලයක් සඳහා, එකතු කළ පිරිවැය LKR
-                    24,931 වනු ඇත, සහ ගෙවිය යුතු මුළු පිරිවැය LKR 2,024,931, APR 5% වේ. Jeff සේවාව භාවිතා කිරීමට
-                    ගාස්තුවක් අය නොකෙරේ, පරිශීලකයින්ට ගෙවිය යුතු අවසාන පිරිවැය එක් එක් ණය මත රඳා පවතී. ණය ගිවිසුම අත්සන්
-                    කිරීමට පෙර පරිශීලකයින්ට APR ණය පොලී අනුපාතය සහ සියලුම ගාස්තු පිළිබඳ සම්පූර්ණ සහ නිවැරදි තොරතුරු
-                    ලැබෙනු ඇත.ප්රකාශන හිමිකම© JEFF, SIA, 43603085405
-                </div>
-            </div>
-        </footer>
     </main>
 
+    <footer>
+        <div class="wrapper">
+            <div class="footer__header">
+                <a href="index.html">
+                    <img src="img/Logo.svg" alt="Logo">
+                </a>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="#">ඉක්මන් ණය</a>
+                        </li>
+                        <li>
+                            <a href="#">ගෝලීය</a>
+                        </li>
+                        <li>
+                            <a href="conditions.html">නියමයන් සහ කොන්දේසි</a>
+                        </li>
+                        <li>
+                            <a href="privacy.html">රහස්යතා ප්රතිපත්ති</a>
+                        </li>
+                    </ul>
+                </nav>
+                <address>
+                    <a href="tel:+77010000000">+77010000000</a>
+                    <a href="mailto:info.zaimer2022@gmail.com">info.zaimer2022@gmail.com</a>
+                    <p>Almaty microdistrict Sairan building 14</p>
+                </address>
+                <ul>
+                    <li>
+                        <a href="#">
+                            <img src="img/facebook.png" alt="facebook">
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#">
+                            <img src="img/telegram.png" alt="telegram">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="footer__main">
+                ජෙෆ් ණය සපයන්නෙකු නොවන අතර ණය නිකුත් නොකරයි. ජෙෆ්ගේ සේවාව පරිශීලකයින්ට කීර්තිමත්, ආරක්ෂිත සහ සුදුසු
+                මූල්ය සමාගමක් සංසන්දනය කර තෝරා ගැනීමට උපකාරී වේ. Jeff පුළුල් පරාසයක මූල්ය නිෂ්පාදන පිරිනමයි,
+                පරිශීලකයින්ට අවම පොලී අනුපාතය 0,01% සහ උපරිම 427% සමඟ දින 91 සිට 366 දක්වා ණය ආපසු ගෙවීමට නම්යශීලී
+                වීමට ඉඩ සලසයි. උදාහරණයක් ලෙස, LKR 2,000,000 ක ණයක් සඳහා, දින 91 ක කාලයක් සඳහා, එකතු කළ පිරිවැය LKR
+                24,931 වනු ඇත, සහ ගෙවිය යුතු මුළු පිරිවැය LKR 2,024,931, APR 5% වේ. Jeff සේවාව භාවිතා කිරීමට
+                ගාස්තුවක් අය නොකෙරේ, පරිශීලකයින්ට ගෙවිය යුතු අවසාන පිරිවැය එක් එක් ණය මත රඳා පවතී. ණය ගිවිසුම අත්සන්
+                කිරීමට පෙර පරිශීලකයින්ට APR ණය පොලී අනුපාතය සහ සියලුම ගාස්තු පිළිබඳ සම්පූර්ණ සහ නිවැරදි තොරතුරු
+                ලැබෙනු ඇත.ප්රකාශන හිමිකම© JEFF, SIA, 43603085405
+            </div>
+        </div>
+    </footer>
 
 
 

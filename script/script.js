@@ -102,3 +102,27 @@ $(document).ready(function () {
 
 });
 // --------------------------------------------------------------------
+
+// Попап
+const openPopupButton = document.getElementById('openPopupButton');
+const closePopupButton = document.getElementById('closePopupButton');
+const popup = document.getElementById('popup');
+function openPopup() {
+    popup.style.display = 'block';
+}
+function closePopup() {
+    popup.style.display = 'none';
+}
+openPopupButton.addEventListener('click', openPopup);
+closePopupButton.addEventListener('click', closePopup);
+window.addEventListener('click', (event) => {
+    if (event.target === popup) {
+        closePopup();
+    }
+});
+window.addEventListener('keydown', (event) => {
+    if (event.key === 'Escape' && popup.style.display === 'block') {
+        closePopup();
+    }
+});
+// --------------------------------------------------------------------
