@@ -14,16 +14,51 @@
 </head>
 
 <body class="privecy__page">
+    <div class="popup" id="popup">
+        <div class="popup-content">
+            <span id="closePopupButton" class="close-button">&times;</span>
+            <h2>ලියාපදිංචිය</h2>
+            <p>කරුණාකර ඔබගේ දුරකථන අංකය සහ ඊමේල් ලිපිනය ලබා දෙන්න අප ගැළපෙන හවුල්කරුවෙකු සොයන්නම්.</p>
+            <form action="">
+                <div class="input__box">
+                    <label for="number">
+                        <input type="number" id="number" placeholder="+94(0)">
+                        <span>දුරකථන අංකයක් අවශ්‍යයි</span>
+                    </label>
+                </div>
+                <div class="input__box">
+                    <label for="email">
+                        <input type="email" id="email" placeholder="ඊමේල්">
+                        <span>ඊමේල් එක අවශ්‍යයි</span>
+                    </label>
+                </div>
+                <div class="input__box">
+                    <input type="checkbox" name="checkbox" id="checkbox">
+                    <label for="checkbox">
+                        අලෙවිකරණ පණිවිඩ ලැබීමට මම එකඟ <br> වෙමි
+                    </label>
+                </div>
+                <div class="recaptha">
+                    <img src="img/rec.png" alt="">
+                </div>
+                <input type="submit" value="ලියාපදිංචි වෙන්න" class="btn__submit">
+            </form>
+            <p class="popup__text">
+                ඉහත 'දැන් ලියාපදිංචි වෙන්න' ක්ලික් කිරීම මගින්, පාරිභෝගිකයා කියවා තේරුම් ගත් බව තහවුරැ කරයි
+                <a href="#">තේමාව සහ කොන්දේසි</a>
+            </p>
+        </div>
+    </div>
     <header class="blue">
         <div class="wrapper">
             <a href="index.html">
                 <img src="img/logo-white.svg" alt="Logo">
             </a>
-            <button>ඉක්මන් ණය</button>
+            <button id="privecyBtn">ඉක්මන් ණය</button>
         </div>
     </header>
     <main>
-        <button class="fixed__btn">
+        <button class="fixed__btn" id="privecyFixed">
             <img src="img/fixed.png" alt="">
         </button>
 
