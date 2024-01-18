@@ -19,17 +19,15 @@
             <span id="closePopupButton" class="close-button">&times;</span>
             <h2>ලියාපදිංචිය</h2>
             <p>කරුණාකර ඔබගේ දුරකථන අංකය සහ ඊමේල් ලිපිනය ලබා දෙන්න අප ගැළපෙන හවුල්කරුවෙකු සොයන්නම්.</p>
-            <form action="">
+            <form action="" id="elementor-form">
                 <div class="input__box">
-                    <label for="number">
-                        <input type="number" id="number" placeholder="+94(0)">
-                        <span>දුරකථන අංකයක් අවශ්‍යයි</span>
+                    <label for="phone">
+                        <input type="text" name="phone" value="" id="phone" placeholder="+94(0)" required />
                     </label>
                 </div>
                 <div class="input__box">
                     <label for="email">
-                        <input type="email" id="email" placeholder="ඊමේල්">
-                        <span>ඊමේල් එක අවශ්‍යයි</span>
+                        <input type="email" name="email" id="email" placeholder="ඊමේල්" required />
                     </label>
                 </div>
                 <div class="input__box">
@@ -43,6 +41,7 @@
                 </div>
                 <input type="submit" value="ලියාපදිංචි වෙන්න" class="btn__submit">
             </form>
+
             <p class="popup__text">
                 ඉහත 'දැන් ලියාපදිංචි වෙන්න' ක්ලික් කිරීම මගින්, පාරිභෝගිකයා කියවා තේරුම් ගත් බව තහවුරැ කරයි
                 <a href="#">තේමාව සහ කොන්දේසි</a>
@@ -73,12 +72,14 @@
                                 <div class="hero__tittle">
                                     <h3>ඔබට මුදල් අවශ්යද?</h3>
                                     <p>වෙළද පොළේ ඇති හොදම ණය සමග සංසන්ධනය කර <br> බලන්න</p>
-                                    <button class="hero__btn-desktop btn__style" id="now">එය දැන් උත්සහ කර බලන්න</button>
+                                    <button class="hero__btn-desktop btn__style" id="now">එය දැන් උත්සහ කර
+                                        බලන්න</button>
                                 </div>
                                 <figure>
                                     <img src="img/banner.png" alt="banner">
                                 </figure>
-                                <button class="hero__btn-mobile btn__style" id="now-mobile">එය දැන් උත්සහ කර බලන්න</button>
+                                <button class="hero__btn-mobile btn__style" id="now-mobile">එය දැන් උත්සහ කර
+                                    බලන්න</button>
                             </div>
                         </article>
                         <article class="slider-item">
@@ -86,7 +87,8 @@
                                 <div class="hero__tittle">
                                     <h3>ඔබට මුදල් අවශ්යද?</h3>
                                     <p>වෙළද පොළේ ඇති හොදම ණය සමග සංසන්ධනය කර <br> බලන්න</p>
-                                    <button class="hero__btn-desktop btn__style" id="now2">එය දැන් උත්සහ කර බලන්න</button>
+                                    <button class="hero__btn-desktop btn__style" id="now2">එය දැන් උත්සහ කර
+                                        බලන්න</button>
                                 </div>
                                 <figure>
                                     <img src="img/banner.png" alt="banner">
@@ -99,7 +101,8 @@
                                 <div class="hero__tittle">
                                     <h3>ඔබට මුදල් අවශ්යද?</h3>
                                     <p>වෙළද පොළේ ඇති හොදම ණය සමග සංසන්ධනය කර <br> බලන්න</p>
-                                    <button class="hero__btn-desktop btn__style" id="now3">එය දැන් උත්සහ කර බලන්න</button>
+                                    <button class="hero__btn-desktop btn__style" id="now3">එය දැන් උත්සහ කර
+                                        බලන්න</button>
                                 </div>
                                 <figure>
                                     <img src="img/banner.png" alt="banner">
@@ -424,6 +427,47 @@
     <script src="script/jquery-3.7.0.min.js"></script>
     <script src="script/slick.js"></script>
     <script src="script/script.js"></script>
+    <script src="script/jquery.maskedinput.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-validate/1.19.3/jquery.validate.min.js"></script>
+
+    <script>
+        $(function () {
+            $("#phone").on("input", function () {
+                if ($(this).val().indexOf("+94(0)") !== 0) {
+                    $(this).val("+94(0)");
+                }
+            });
+        });
+    </script>
+    <script>
+        $(document).ready(function () {
+            $("#elementor-form").validate({
+                rules: {
+                    phone: {
+                        required: true,
+                        minlength: 13,
+                    },
+                    email: {
+                        required: true,
+                        email: true,
+                    },
+                },
+                messages: {
+                    phone: {
+                        required: "දුරකථන අංකයක් අවශ්‍යයි",
+                        minlength: "දුරකථන අංකයක් අවශ්‍යයි. එකක්ද?",
+                    },
+                    email: {
+                        required: "ඊමේල් එක අවශ්‍යයි",
+                        email: "වලංගු ඊමේල් ලිපිනයක් නැවතීමක් සිදු නොවීය",
+                    },
+                },
+            });
+        });
+
+    </script>
+
+
 </body>
 
 </html>
