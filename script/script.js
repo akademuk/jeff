@@ -104,25 +104,36 @@ $(document).ready(function () {
 // --------------------------------------------------------------------
 
 // Попап
-const openPopupButton = document.getElementById('openPopupButton');
+// Попап
+const openPopupButtons = document.getElementsByClassName('openPopupButton');
 const closePopupButton = document.getElementById('closePopupButton');
 const popup = document.getElementById('popup');
+
 function openPopup() {
     popup.style.display = 'block';
 }
+
 function closePopup() {
     popup.style.display = 'none';
 }
-openPopupButton.addEventListener('click', openPopup);
+
+// Iterate over each element with the class 'openPopupButton'
+for (const button of openPopupButtons) {
+    button.addEventListener('click', openPopup);
+}
+
 closePopupButton.addEventListener('click', closePopup);
+
 window.addEventListener('click', (event) => {
     if (event.target === popup) {
         closePopup();
     }
 });
+
 window.addEventListener('keydown', (event) => {
     if (event.key === 'Escape' && popup.style.display === 'block') {
         closePopup();
     }
 });
+
 // --------------------------------------------------------------------

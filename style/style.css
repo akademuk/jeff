@@ -395,6 +395,7 @@ header .wrapper button {
     flex-direction: column;
     position: relative;
     overflow: hidden;
+    cursor: pointer;
 }
 
 .financialNeeds__card figure {
